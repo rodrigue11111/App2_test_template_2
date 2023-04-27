@@ -1,0 +1,91 @@
+﻿<Page
+    x:Class="App2_test_template_2.Donnees_du_melange"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2_test_template_2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+    <Grid>
+
+
+        <!--<controls:DataGrid x:Name="Information_resultats_RPC"
+                  ItemsSource="{x:Bind Donnees_du_melange_resultats_list}"
+                  AutoGenerateColumns="False">
+            <controls:DataGrid.Columns>
+                <controls:DataGridTextColumn Header="Paramètres"
+                                             Binding="{Binding Parametres}"
+                                             FontSize="15" 
+                                             FontWeight="Bold"/>
+                <controls:DataGridTextColumn Header="Recette no.1"
+                                             Binding="{Binding Recette_1}"
+                                             FontSize="15"/>
+                <controls:DataGridTextColumn Header="Recette no.2"
+                                             Binding="{Binding Recette_2}"
+                                             FontSize="15"/>
+
+                <controls:DataGridTextColumn Header="Recette no.3"
+                                             Binding="{Binding Recette_3}"
+                                             FontSize="15"/>
+
+                <controls:DataGridTextColumn Header="Recette no.4"
+                                             Binding="{Binding Recette_4}"
+                                             FontSize="15"/>
+
+               
+
+
+
+
+                --><!--<controls:DataGridComboBoxColumn Header="Department"
+                                                 Binding="{Binding DepartmentId}"                                                  
+                                                 ItemsSource="{x:Bind Departments, Mode=OneWay}"
+                                                 DisplayMemberPath="DepartmentName"/>--><!--
+            </controls:DataGrid.Columns>
+        </controls:DataGrid>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+
+
+
+
+
+
+
+        <Button Content="Standard XAML button" Click="Button_Click" />
+
+        <TextBlock>
+            
+            
+        </TextBlock>
+        <TextBlock>
+
+
+        </TextBlock>
+
+        <Button Content="Standard XAML button2" Click="Button_Click2" />
+
+
+
+   
+
+    </StackPanel>
+</Page>

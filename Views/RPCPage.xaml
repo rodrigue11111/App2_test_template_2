@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="App2_test_template_2.Views.RPCPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Style="{StaticResource PageStyle}">
+
+    <ScrollViewer>
+    <StackPanel Margin="5">
+
+        <!--
+                The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content.
+                Place your content here.
+            -->
+
+
+            <!-- Put the following VisualStateGroup(s) inside the first component of your Page -->
+
+
+
+
+
+
+            <NavigationView x:Name="nvSample" CompactModeThresholdWidth="1007" ExpandedModeThresholdWidth="1007"  PaneDisplayMode="Left" SelectionChanged="nvSample_SelectionChanged" VerticalAlignment="Center" IsSettingsVisible="False" >
+                <NavigationView.MenuItems>
+                    <NavigationViewItemSeparator/>
+                    <NavigationViewItem  Content="Dosage selon Cw%" Tag="Dosage_selon_Cw" Icon="Document" />
+                    <NavigationViewItemSeparator/>
+                    <NavigationViewItem  Content="Méthode essaie-erreur" Tag="Méthode_essai_erreur" Icon="Document"  />
+                    <NavigationViewItemSeparator/>
+                    <NavigationViewItem  Content="Dosage selon le slump " Tag="Dosage_selon_le_slump" Icon="Document" />
+                    <NavigationViewItemSeparator/>
+                    <NavigationViewItem  Content="Dosage selon W/C" Tag="Dosage_selon_w_c" Icon="Document"   />
+                    
+                    <NavigationViewItem  Content="Résultats" Tag="Resultats" Icon="Document"   />
+
+
+                    <NavigationViewItemSeparator/>
+                </NavigationView.MenuItems>
+                
+                <Frame x:Name="contentFrame">
+                    <Frame.ContentTransitions>
+                        <TransitionCollection>
+                        <NavigationThemeTransition/>
+                        </TransitionCollection>
+                    </Frame.ContentTransitions>
+                   
+            </Frame>
+                </NavigationView>
+
+
+
+</StackPanel>
+
+    </ScrollViewer>
+</Page>

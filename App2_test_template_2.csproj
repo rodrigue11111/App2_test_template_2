@@ -1,0 +1,134 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>App2_test_template_2</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x86;x64;arm64</Platforms>
+    <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
+    <PublishProfile>Properties\PublishProfiles\win10-$(Platform).pubxml</PublishProfile>
+    <UseWinUI>true</UseWinUI>
+    <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Ajustement_pour_slump_melange_essai_erreur.xaml" />
+    <None Remove="Donnees_du_melange.xaml" />
+    <None Remove="Dosage_selon_Cw.xaml" />
+    <None Remove="Dosage_selon_le_slump.xaml" />
+    <None Remove="Dosage_selon_w_c.xaml" />
+    <None Remove="Information_sur_le_melange_methode_essai_erreur.xaml" />
+    <None Remove="Information_sur_le_melange_Resultats_RPC.xaml" />
+    <None Remove="Longeur_largeur_hauteur_inch.xaml" />
+    <None Remove="Longueur_largeur_et_hauteur_metre.xaml" />
+    <None Remove="Methode_essai_erreur.xaml" />
+    <None Remove="Parametres_geotechniques_1_RPC.xaml" />
+    <None Remove="Parametres_geotechniques_2_RPC.xaml" />
+    <None Remove="Parametres_geotechniques_3_RPC.xaml" />
+    <None Remove="Rayon_et_hauteur_inch.xaml" />
+    <None Remove="Rayon_et_hauteur_metre.xaml" />
+    <None Remove="Resultats_RPC.xaml" />
+    <None Remove="Section_et_hauteur_inch.xaml" />
+    <None Remove="Section_et_hauteur_metre.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>9</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>00020813-0000-0000-c000-000000000046</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="7.0.3" />
+    <PackageReference Include="CommunityToolkit.WinUI.UI.Controls" Version="7.1.2" />
+    <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.DataGrid" Version="7.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.1" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.WinUI.Managed" Version="2.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\App2_test_template_2.Core\App2_test_template_2.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Ajustement_pour_slump_melange_essai_erreur.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Page Update="Donnees_du_melange.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Information_sur_le_melange_Resultats_RPC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Parametres_geotechniques_3_RPC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Parametres_geotechniques_2_RPC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Parametres_geotechniques_1_RPC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Longeur_largeur_hauteur_inch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Longueur_largeur_et_hauteur_metre.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Rayon_et_hauteur_inch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Rayon_et_hauteur_metre.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Section_et_hauteur_inch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Section_et_hauteur_metre.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Resultats_RPC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Dosage_selon_w_c.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Dosage_selon_le_slump.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Information_sur_le_melange_methode_essai_erreur.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Methode_essai_erreur.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Dosage_selon_Cw.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnablePreviewMsixTooling)'=='true'">
+    <ProjectCapability Include="Msix" />
+  </ItemGroup>
+</Project>

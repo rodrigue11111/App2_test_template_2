@@ -1,0 +1,312 @@
+﻿<Page
+    x:Class="App2_test_template_2.Views.InformationsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Style="{StaticResource PageStyle}">
+
+    <ScrollViewer>
+
+    <StackPanel Margin="20">
+
+
+            
+
+
+                <TextBlock>
+             
+        </TextBlock>
+
+            <TextBox x:Name="nom_operateur_"
+            Header="Nom de l'opérateur" PlaceholderText="" />
+
+        <TextBox x:Name="nom_du_projet_"
+            Header="Nom du projet" PlaceholderText="" />
+
+            <TextBox x:Name="identification_du_résidu_" Header="Identification du résidu" PlaceholderText="" />
+
+
+        <TextBlock>
+
+        </TextBlock>
+
+            
+
+            <DatePicker x:Name="date_de_mélange_"
+                        
+                Header="Date de mélange" />
+
+
+            <TextBlock>
+
+        </TextBlock>
+
+        <TextBlock>
+   
+    
+    <Span >    <Bold>  <Underline>Contenant pour le moulage</Underline> </Bold> </Span >
+        </TextBlock>
+
+        <TextBlock>
+
+        </TextBlock>
+
+        <MenuBar>
+            <MenuBarItem  Title="Section et Hauteur">
+                <MenuFlyoutItem  Text="Mètre" Click="MenuFlyoutItem_Click"/>
+                <MenuFlyoutItem Text="Inch" Click="MenuFlyoutItem_Click_1"/>
+
+            </MenuBarItem>
+
+            <MenuBarItem Title="Rayon et Hauteur">
+                <MenuFlyoutItem Text="Mètre" Click="MenuFlyoutItem_Click_2"/>
+                <MenuFlyoutItem Text="Inch" Click="MenuFlyoutItem_Click_3"/>
+
+            </MenuBarItem>
+
+            <MenuBarItem Title="Longueur,largeur et hauteur">
+                <MenuFlyoutItem Text="Mètre" Click="MenuFlyoutItem_Click_4"/>
+                <MenuFlyoutItem Text="Inch" Click="MenuFlyoutItem_Click_5"/>
+            </MenuBarItem>
+        </MenuBar>
+
+        <TextBlock>
+   
+    <LineBreak/>
+            <LineBreak/>
+    <Span> <Bold> <Underline>Composante liant hydraulique </Underline> </Bold> </Span>
+        </TextBlock>
+
+
+        <TextBlock>
+
+        </TextBlock>
+
+
+        <RadioButtons   Header="Nombre de ciments pour le liant" MaxColumns="3">
+
+            <RadioButton x:Name="Option_1_Nombre_ciments" Content="1" Checked="RadioButton_Checked_Nombre"/>
+
+                <RadioButton x:Name="Option_2_Nombre_ciments" Content="2" Checked="RadioButton_Checked_Nombre"/>
+
+                <RadioButton x:Name="Option_3_Nombre_ciments" Content="3" Checked="RadioButton_Checked_Nombre"/>
+            
+            
+            
+            
+        </RadioButtons     >
+
+     
+        <TextBlock>
+
+        </TextBlock>
+
+        <TextBlock>
+
+        </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+
+
+
+
+            <RadioButtons x:Name="ciment_1" Header="Ciment 1" MaxColumns="5">
+
+            <RadioButton x:Name="Ciment_CP50_ciment_1" Content="Ciment CP50" Checked="RadioButton_Checked_Ciment_1"/>
+                
+                <RadioButton x:Name="Ciment_CP10_ciment_1" Content="Ciment CP10" Checked="RadioButton_Checked_Ciment_1"/>
+
+
+                <RadioButton x:Name="Slag_ciment_1" Content="Slag" Checked="RadioButton_Checked_Ciment_1"/>
+
+                <RadioButton x:Name="Fly_Ash_ciment_1" Content="Fly Ash" Checked="RadioButton_Checked_Ciment_1"/>
+
+                <RadioButton x:Name="Chaux_ciment_1" Content="Chaux" Checked="RadioButton_Checked_Ciment_1"/>
+
+        </RadioButtons     >
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+
+            <RadioButtons x:Name="ciment_2"  Header="Ciment 2" MaxColumns="5">
+
+                <RadioButton x:Name="Ciment_CP50_ciment_2" Content="Ciment CP50" Checked="RadioButton_Checked_Ciment_2"/>
+
+                <RadioButton x:Name="Ciment_CP10_ciment_2" Content="Ciment CP10" Checked="RadioButton_Checked_Ciment_1"/>
+
+
+                <RadioButton x:Name="Slag_ciment_2" Content="Slag" Checked="RadioButton_Checked_Ciment_2"/>
+
+                <RadioButton x:Name="Fly_Ash_ciment_2" Content="Fly Ash" Checked="RadioButton_Checked_Ciment_2"/>
+
+                <RadioButton x:Name="Chaux_ciment_2" Content="Chaux" Checked="RadioButton_Checked_Ciment_2"/>
+
+        </RadioButtons     >
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <RadioButtons x:Name="ciment_3" Header="Ciment 3" MaxColumns="5">
+
+            <RadioButton x:Name="Ciment_CP50_ciment_3" Content="Ciment CP50" Checked="RadioButton_Checked_Ciment_3"/>
+
+                <RadioButton x:Name="Ciment_CP10_ciment_3" Content="Ciment CP10" Checked="RadioButton_Checked_Ciment_1"/>
+
+
+                <RadioButton x:Name="Slag_ciment_3" Content="Slag" Checked="RadioButton_Checked_Ciment_3"/>
+
+                <RadioButton x:Name="Fly_Ash_ciment_3" Content="Fly Ash" Checked="RadioButton_Checked_Ciment_3"/>
+
+                <RadioButton x:Name="Chaux_ciment_3" Content="Chaux" Checked="RadioButton_Checked_Ciment_3"/>
+
+
+        </RadioButtons     >
+
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+
+            <NumberBox x:Name="NumberBoxSpinButton_InformationPage_1"
+    Header="Fraction du ciment 1 (%) :"                   
+  
+    Maximum="100"
+    Value="0"
+    SpinButtonPlacementMode="Inline"
+    SmallChange="1"
+                   Minimum="0"
+    LargeChange="10" />
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <NumberBox x:Name="NumberBoxSpinButton_InformationPage_2"
+    Header="Fraction du ciment 2 (%) :"                   
+  
+    Maximum="100"
+    Value="0"
+    SpinButtonPlacementMode="Inline"
+    SmallChange="1"
+                   Minimum="0"
+    LargeChange="10" />
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <NumberBox x:Name="NumberBoxSpinButton_InformationPage_3"
+    Header="Fraction du ciment 3 (%) :"                   
+  
+    Maximum="100"
+    Value="0"
+    SpinButtonPlacementMode="Inline"
+    SmallChange="1"
+                   Minimum="0"
+    LargeChange="10" />
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+
+            <Button x:Name="btn1" Content="  ENREGISTRER  "
+          Click="btn1_click" 
+          Width="300"
+          HorizontalAlignment="Center"
+          />
+
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+            <TextBlock>
+
+            </TextBlock>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </StackPanel>
+        
+        </ScrollViewer>
+    
+</Page>
